@@ -1,0 +1,23 @@
+.product-listing-list{
+
+   
+    display:block;
+   
+    
+}
+
+li{
+    display:block;
+   
+}
+
+.product-listing-container{
+    display: block;
+    text-align: center;
+    width: 50%
+    
+}
+
+.product-listing-link{
+    display: block;
+}
