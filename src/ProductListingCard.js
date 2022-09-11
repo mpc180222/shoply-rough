@@ -9,7 +9,7 @@ function ProductListingCard({key, name, price, addToCart, removeFromCart, inCart
 
     return(
         <div className="product-listing-card">
-            <h2>{name}</h2>
+            <h2><Link to = {`/products/${id}`}>{name}</Link></h2>
             <img src = {img} ></img>
             <p>${price.toFixed(2)}</p>
             <button id = {id} onClick = {(evt) => addToCart(evt)} >Add to cart</button>

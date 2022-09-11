@@ -26,7 +26,7 @@ function ProductDetail(){
     }
 
     return(
-        <div>
+        <div className="product-listing-card">
             <h1>{displayedItem.name}</h1>
             <img src = {displayedItem.image_url}></img>
             <p>{displayedItem.description}</p>

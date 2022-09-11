@@ -27,11 +27,14 @@ function ProductList() {
 
     return(
         <div className="product-listing-container">
+            <h1>Welcome to Shoply!</h1>
+            <div className="product-grid">
             <ul className="product-listing-list">
             {inventoryItems.map(item => <li><ProductListingCard key = {item.id} id = {item.id} name = {item.name} img = {item.image_url}
             price = {item.price} addToCart={addToCart} removeFromCart = {removeFromCart} 
             inCart = {cart.find(cartItem => cartItem.id === item.id) ? true : false} /></li>)}
             </ul>
+            </div>
                 <h3>Cart Total: ${cart.reduce((acc, curr) => (acc + curr.price), 0).toFixed(2)}
                 </h3>
   
